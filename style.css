@@ -1,0 +1,180 @@
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+	
+body {
+	font-family: 'Jeju Gothic', serif;
+	margin: 0px;
+}
+
+header {
+	background-image: url('header.png');
+	width: 100%;
+	height: 200px;
+	background-size: 100% 100%;
+	background-color: #dddddd;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	opacity: 1;
+	transition: 1s opacity;
+}
+
+header div{
+	margin: 0px;
+	padding:0px;
+	background-image: url('title.png');
+	width: 100%;
+	height: 190px;
+	background-repeat: no-repeat;
+	background-size:  contain;
+	background-position: 50% 50%;
+}
+header div#black{
+	height: 10px;
+	background-color: #222222;
+}
+
+header:hover {
+	opacity: 0.5;
+}
+
+nav {
+	background-color: #222222;
+	width: 200px;
+	float: left;
+	height: 700px;
+	padding:  0px;
+}
+nav ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	font-size: 20px;
+	vertical-align: middle;
+	text-align: center;
+}
+nav li {
+	width: 100%;
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	height: 70px;
+	line-height: 70px;
+	transition: 1s background-color;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+nav img {
+	width: 40px;
+	height: 40px;
+	margin: 0px 20px 0px 0px;
+	vertical-align: middle;
+}
+nav img#title{
+	width: 150px;
+	height: 150px;
+	padding: 25px;
+    top: 50%;
+    left: 50%;
+}
+nav img#selected{
+	display: none;
+}
+nav li#selected{
+	background-color: #444444;
+}
+nav li:hover {
+	background-color: #333333;
+}
+section#main {
+	background-color: #444444;
+	width: (100%-200px);
+	height: 700px;
+	color: white;
+	padding:0px;
+	margin-left: 200px;
+}
+article {
+	width: 100%;
+	height: 100%;
+}
+footer {
+	width: 100%;
+	padding: 10px 0 0 0;
+	height: 120px;
+	background-color: #333333;
+	clear: both;
+	text-align: center;
+	line-height: 50px;
+	color:white;
+}
+footer p {
+	margin: 0px;
+	color: gray;
+}
+footer div {
+	display: inline;
+	margin: 10px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+footer div a{
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+footer img {
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+
+.card-wrapper {
+	 position: relative;
+	 background-color: transparent;
+	 width: 300px;
+	 height: 150px;
+	 perspective: 1000px;
+}
+
+.card-inner {
+	 position: absolute;
+	 width: 100%;
+	 height: 100%;
+	 text-align: center;
+	 transition: transform 0.5s;
+	 transform-style: preserve-3d;
+	 box-shadow: 8px 8px 10px 0 rgba(0,0,0,0.3);
+}
+
+.card-wrapper:hover .card-inner {
+  transform: rotateX(180deg);
+}
+
+.card-front {
+	margin: auto;
+	position: absolute;
+	line-height: 2;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	color: #222222;
+	vertical-align: middle;
+	font-size: 25px;
+}
+
+.card-back {
+	margin: auto;
+	position: absolute;
+	line-height: 1;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	color: white;
+	vertical-align: middle;
+	transform: rotateX(180deg);
+	font-size: 25px;
+}

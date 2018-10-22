@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<link rel="stylesheet" href="style.css">
+			<style>
+				.business-card-wrapper {
+					 position: relative;
+					 background-color: transparent;
+					 width: 360px;
+					 height: 200px;
+					 perspective: 1000px;
+					 left:120px;
+					 top:30px;
+				}
+				
+				.business-card-wrapper:hover  .card-inner {
+				  transform: rotateX(180deg);
+				}
+				
+				div#wrap {
+					width:1200px;
+					height: 800px;
+					overflow: hidden;
+					padding: 10px;
+				}
+				img#bridge {
+					position: relative;
+				}
+				div#info
+				{
+					position: relative;
+					width:600px;
+					margin:0;
+					text-align: center;
+					vertical-align:middle;
+				}
+				p#news {
+					position: relative;
+					width:500px;
+					height:500px;
+					background-size: contain;
+					background-image: url("news1.png");
+					background-repeat: no-repeat;
+					overflow: visible;
+					border: 1px solid white;
+					animation: 10s myanim;
+					animation-iteration-count: infinite;
+					float:right;
+					bottom:500px;
+					right:100px;
+				}
+				
+				img#card {
+					width:100%;
+					height:100%;
+					object-fit: cover;
+				}
+				
+				a {
+					text-decoration: none;
+					color:white;
+				}
+				
+				@keyframes myanim {
+					from, to {background-image: url("news1.png");}
+					25% {background-image: url("news2.png");}
+					50% {background-image: url("news3.png");}
+					75% {background-image: url("news4.png");}
+				}
+			</style>
+	</head>
+	<body>
+		<a href = "index.html"><header><div></div><div id="black"></div></header></a>
+		<nav>
+			<img id="title" src="title.jpg"></img>
+			<ul>
+				<a href= "about_me.html"><li><img src="about.png">About Me</img></li></a>
+				<a href= "table.html"><li><img src="table.png">Time Table</img></li></a>
+				<a href= "bridge.html"><li id="selected"><img id="selected" src="bridge.png">Bridge</img></li></a>
+				<a href= "programming.html"><li><img src="code.png">Programming</img></li></a>
+				<a href= "contact.html"><li><img src="contact.png">Contact</img></li></a>
+			</ul>
+		</nav>
+		<section id="main" >
+		<div id="wrap">
+		<article>
+			<p>
+			<div id="info">
+				<img id="bridge" src="bridge_white.png" width=320px height=240px ></img>
+				<h1>대학생연합 게임제작 동아리</h1>
+				<p><img src="tistory.png" width=20px height=20px></img><font color=#ff6511> 
+					Blog: </font><a href="http://bridgegames.tistory.com/">http://bridgegames.tistory.com/</a></p>
+				<div class="business-card-wrapper">
+				  <div class="card-inner">
+					<div class="card-front">
+						<img id="card" src="business_front.png"></img>
+					</div>
+					<div class="card-back">
+						<img id="card" src="business_back.png"></img>
+					</div>
+				  </div>
+				</div>
+			</div>
+			</p>
+			<p id="news"></p>
+		<div>
+		</article>
+		</section>
+		<footer>
+			<p>
+				<div id = "link"><img src="tistory.png"></img><a href="http://adaid.tistory.com/">Blog</a></div>
+				<div id = "link"><img src="facebook.png"></img><a href="https://www.facebook.com/ahyeong2533">Facebook</a></div>
+				<div id = "link"><img src="steam.png"></img><a href="https://steamcommunity.com/id/miru2533/">Steam</a></div>
+			</p>
+			<p>
+				Copyright 2018 Choi Ah-Yeong - All Rights Reserved.
+			</p>
+		</footer>
+	</body>
+</html>

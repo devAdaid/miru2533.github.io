@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<link rel="stylesheet" href="style.css">
+			<style>
+				h1 {
+					font-size: 30px;
+				}
+				
+				div#wrap {
+					padding: 20px;
+					overflow: hidden;
+				}
+				
+				article {
+					text-align: center;
+				}
+				table{
+					position:relative;
+					border: 3px;
+					border-collapse: collapse;
+					border: 2px solid black;
+					caption-side: bottom;
+					text-align: center;
+					font-size: auto;
+					width:800px;
+				}
+				tr {
+					border: 2px solid gray;
+					padding: 15px 30px;
+					height: 10%;
+				}
+				th {
+					background-color: #222222;
+					border: 2px solid black;
+					padding: 15px 30px;
+					height: 10%;
+					overflow: hidden;
+				}
+				th#top {
+					background-color: #111111;
+				}
+				th#left {
+					background-color: #333333;
+				}
+				td {
+					border: 2px solid gray;
+					padding: 15px 30px;
+					background-color: #eeeeee;
+					height: 10%;
+				}
+				td#cg {
+					background-color: #f69482;
+				}
+				td#ca {
+					background-color: #94e5d7;
+				}
+				td#os {
+					background-color: #9edb8c;
+				}
+				td#nt {
+					background-color: #e5c476;
+				}
+				td#so {
+
+					background-color: #84b0e1;
+				}
+				td#ca:hover, td#cg:hover, td#os:hover, td#nt:hover, td#so:hover  {
+					background-color: #666666;
+				}
+				a {
+					text-decoration:none;
+					color:white;
+				}
+			</style>
+	</head>
+	<body>
+		<a href = "index.html"><header><div></div><div id="black"></div></header></a>
+		<nav>
+			<img id="title" src="title.jpg"></img>
+			<ul>
+				<a href= "about_me.html"><li><img src="about.png">About Me</img></li></a>
+				<a href= "table.html"><li id="selected"><img id="selected" src="table.png">Time Table</img></li></a>
+				<a href= "bridge.html"><li><img src="bridge.png">Bridge</img></li></a>
+				<a href= "programming.html"><li><img src="code.png">Programming</img></li></a>
+				<a href= "contact.html"><li><img src="contact.png">Contact</img></li></a>
+			</ul>
+		</nav>
+		<section id="main" >
+		<article>
+		<div id="wrap">
+			<h1>2018-2학기 시간표</h2>
+			<table align="center">
+				<tr>
+					<th id="top" colspan="6"> 시간표</th>
+				</tr>
+				<tr>
+					<th> </th>
+					<th>월요일</th>
+					<th>화요일</th>
+					<th>수요일</th>
+					<th>목요일</th>
+					<th>금요일</th>
+				</tr>
+				<tr>
+					<th id="left">1교시</th>
+					<td></td>
+					<td></td>
+					<td id = "cg"><a href="http://cg.skku.edu">그래픽스</a></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<th id="left">2교시</th>
+					<td id = "cg"><a href="http://cg.skku.edu">그래픽스</a></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<th id="left">3교시</th>
+					<td></td>
+					<td id = "os"><a href="http://dicl.skku.edu/class/fall2018/os/">운영체제</a></td>
+					<td></td>
+					<td id = "ca"><a href="http://nyx.skku.ac.kr/?page_id=1267">컴퓨터구조</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<th id="left">4교시</th></a>
+					<td></td>
+					<td id = "ca"><a href="http://nyx.skku.ac.kr/?page_id=1267">컴퓨터구조</a></td>
+					<td></td>
+					<td id = "os"><a href="http://dicl.skku.edu/class/fall2018/os/">운영체제</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<th id="left">5교시</th>
+					<td></td>
+					<td></td>
+					<td id = "nt">네트워크</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<th id="left">6교시</th>
+					<td id = "nt">네트워크</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<th id="left">7교시</th>
+					<td></td>
+					<td  id = "so" rowspan="3"> 실습4</td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<th id="left">8교시</th>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<th id="left">9교시</th>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+		</div>
+		</article>
+		</section>
+		<footer>
+			<p>
+				<div id = "link"><img src="tistory.png"></img><a href="http://adaid.tistory.com/">Blog</a></div>
+				<div id = "link"><img src="facebook.png"></img><a href="https://www.facebook.com/ahyeong2533">Facebook</a></div>
+				<div id = "link"><img src="Steam.png"></img><a href="https://steamcommunity.com/id/miru2533/">Steam</a></div>
+			</p>
+			<p>
+				Copyright 2018 Choi Ah-Yeong - All Rights Reserved.
+			</p>
+		</footer>
+	</body>
+</html>
